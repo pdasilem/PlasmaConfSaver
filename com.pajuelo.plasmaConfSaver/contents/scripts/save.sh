@@ -44,6 +44,17 @@ cp "$configPath/krunnerrc" "$configFolder/krunnerrc"
 #kvantum theme
 cp -r "$configPath/Kvantum" "$configFolder/Kvantum"
 
+#GTK settings
+cp -r "$configPath/gtk-2.0" "$configFolder/gtk-2.0"
+cp -r "$configPath/gtk-3.0" "$configFolder/gtk-3.0"
+cp -r "$configPath/gtk-4.0" "$configFolder/gtk-4.0"
+
+#xsettingsd
+cp -r "$configPath/xsettingsd" "$configFolder/xsettingsd"
+
+#kde defaults
+cp -r "$configPath/kdedefaults" "$configFolder/kdedefaults"
+
 #autostart
 cp -r "$configPath/autostart" "$configFolder/autostart"
 

@@ -48,13 +48,29 @@ cp "$savePath/$modelData/kwinrulesrc" "$configPath/kwinrulesrc"
 mv "$configPath/lattedockrc" "$configPath/lattedockrc.bak"
 mv "$configPath/latte" "$configPath/latte.bak"
 mv "$configPath/autostart" "$configPath/autostart.bak"
-mv "$configPath/Kvantum" "$configPath/Kvantum.bak"
 cp "$savePath/$modelData/lattedockrc" "$configPath/lattedockrc"
 cp -r "$savePath/$modelData/latte" "$configPath"
 cp -r "$savePath/$modelData/autostart" "$configPath"
-cp -r "$savePath/$modelData/Kvantum" "$configPath"
-#kvantum
 
+#kvantum
+mv "$configPath/Kvantum" "$configPath/Kvantum.bak"
+cp -r "$savePath/$modelData/Kvantum" "$configPath"
+
+#gtk
+mv "$configPath/gtk-2.0" "$configPath/gtk-2.0.bak"
+mv "$configPath/gtk-3.0" "$configPath/gtk-3.0.bak"
+mv "$configPath/gtk-4.0" "$configPath/gtk-4.0.bak"
+cp -r "$savePath/$modelData/gtk-2.0" "$configPath"
+cp -r "$savePath/$modelData/gtk-3.0" "$configPath"
+cp -r "$savePath/$modelData/gtk-4.0" "$configPath"
+
+#xsettingsd
+mv "$configPath/xsettingsd" "$configPath/xsettingsd.bak"
+cp -r "$savePath/$modelData/xsettingsd" "$configPath"
+
+#kde
+mv "$configPath/kdedefaults" "$configPath/kdedefaults.bak"
+cp -r "$savePath/$modelData/kdedefaults" "$configPath"
 
 
 FILE=$savePath/$modelData/latterun
